@@ -27,7 +27,7 @@ creationProcess()
   deletionProcess()
 })
 
-// ↓functions
+// functions
 
 async function creationProcess () {
   for (let i = 0; i < stacks.length; i++) {

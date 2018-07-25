@@ -2,7 +2,9 @@
 
 ## How to use
 
-Create yaml template
+First, create yaml template. Stack parameters are the same as `CloudFormation.createStack()` in the SDK.
+
+1. Create yaml template:
 
 ```yaml
 Stacks:
@@ -15,8 +17,14 @@ Stacks:
         ParameterValue: hello-cfn-chain
 ```
 
-Run command
+Next, execute the command.
+
+2. Execute the command:
 
 ```bash
 $ node main.js ./chain-sample.yaml
 ```
+
+## Troubleshooting
+
+- If stack creation fails, created stacks will be deleted. But, if stack deletion fails due by some problem, processing stops.
